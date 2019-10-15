@@ -1,0 +1,17 @@
+(a)Source of the data (URL, name of the person or organization who produced the data)
+
+The source of my custom data can be found through this link: https://data.nal.usda.gov/dataset/composition-foods-raw-processed-prepared-usda-national-nutrient-database-standard-reference-release-27. This data set was from the USDA. It contains nutrition information of foods from the year 2014. The title of the page is "Composition of Foods Raw, Processed, Prepared USDA National Nutrient Database for Standard Reference, Release 27". Through this dataset we can see all nutrition information of specific foods which can be found through their own code too. I only grabbed the first 50 lines of the file since it was a big data set with over 2000 lines. 
+
+(b) A brief description of the tables you defined and the relationships between them. 
+
+There are three tables for this dataset. The first table is called Items. This table contains the nutrition data base code number and the description of the food item. This is the main table that is referenced by the other two tables because of the code number. The second table is a basic nutrition table that contains main nutrition information that one knows could be found in any nutrition label of an item. This table reference the code number of the first to match the nutrients to the item. The third table is Vitamins table which is a list of the amount of a vitamin the food item contains. It also references the code number of the first table to match the vitamins to the item.
+
+(c) Any mapping challenges you may have encountered.
+
+Some mapping challenges I faced were splitting the dataset into three good tables with information that could be mapped to each other. Before I found this specific nutrition database, I had trouble finding ways to map other tables. However, I decided to work with this table since it contains a specific identifier used for all three tables. Each table has it own specific information that is needed to learn about the nutrition for a specific food item.
+
+(d) Three non-trivial questions you might ask based on the dataset you chose
+
+1. Based on this dataset, what type of cheese is the healthiest to consume on a daily bases?
+2. Could there be a correlation between the cholesterol amount of a food item with heart disease?
+3. What type of dairy products would you recommend to someone who is on a diet to increase healthy nutrients/vitamins but also trying to lose weight?  
